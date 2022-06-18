@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="/index.js" defer></script>
+  
+</head>
+<body>
+  <main>
+    <section id="left">
+      <p id="bold_text">
+        Learn to code by <br>
+        watching others
+      </p>
+      <p id="left_para">
+        See how experienced developers solve problems in real-time. <br>
+        Watching scripted tutorials is great, but understanding how <br>
+        developers think is invaluable.
+      </p>
+  
+    </section>
+    <secton id="right">
+      <p id="purple_block">
+          Try it free 7 days then $20/mo. thereafter 
+      </p>
+      <form action="">
+        <!--i am going to put the inputs in a div because i want position absolute to work relative to that div
+        if you dont the position will be relative to the whole form trust me i've tried it-->
+        <div class="fake-input">
+          <input  class= "text_input" type="text" name="firstname" id="firstname" placeholder="Frist name" required>
+          <img id="fnimg" src="icon-error.svg" alt=""/>
+          <label for="firstname" id="fnlabel" >First name cannot be empty</label>
+          <br>
+        </div>
+        <div class="fake-input">
+          <input class= "text_input" type="text" name="lastname" id="lastname" placeholder="Last name" required>
+          <img id="lnimg" src="icon-error.svg" alt=""/>
+          <label id="lnlabel" for="lastname">Last name cannot be empty</label>
+          <br>
+        </div>
+        <div class="fake-input">
+          <input class= "text_input" type="email" name="email" id="email" placeholder="Email Address" required>
+          <img id="emailimg" src="icon-error.svg" alt=""/>
+          <label id="emaillabel" for="email">Looks like it is not an email</label>
+          <br>
+        </div>
+        <div class="fake-input">
+          <input class= "text_input" type="password" name="password" id="password" placeholder="Password" >
+          <img id="passimg" src="icon-error.svg" alt=""/>
+          <label id="passlabel" for="password">Password cannot be empty</label>
+          <br>
+        </div>
+        <button onclick="validate()" type="submit">CLAIM YOUR FREE TRIAL</button>
+        <br>
+        <p id="form_para">
+          By clicking the button you're agreeing to our <span>Terms and services</span>
+        </p>
+        
+      </form>
+    </secton>
+    
+    
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/Stephanniegb">Stephanie Egbuonu</a>.
+    </p>
+  </footer>
+  
+</body>
+<!--<script src="/main.js"></script>-->
+</html>
